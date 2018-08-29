@@ -3,26 +3,13 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
         int numb;
-
     for (; ; ) {
         cout << "Enter the number to be determined  ";
         cin >> numb;
-        switch (numb) {
-            case 2:
-                cout << "your number is a prime number" << endl;
-                break;
-            case 3:
-                cout << "your number is a prime number" << endl;
-                break;
-            case 5:
-                cout << "your number is a prime number" << endl;
-                break;
-            case 7:
-                cout << "your number is a prime number" << endl;
-                break;
-        }
-        if (numb%2 == 0) {
-            cout << "your numbeer is not a prime number " << endl;
+        if (numb ==2 || numb == 3 || numb == 5 || numb== 7) {
+            cout << "your number is a prime number." << endl;
+        }else if (numb%2 == 0){
+            cout << "your number is not a prime number " << endl;
 
         }else if (numb%3 == 0){
             cout << "your number is not a prime number" << endl;
@@ -35,7 +22,6 @@ int main(int argc, const char * argv[]) {
         }else{
             cout << "Your number is a prime number" << endl;
         }
-
     }
     return 0;
     }
